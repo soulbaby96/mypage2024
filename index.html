@@ -1,74 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พนิตนันท์</title>
-    <link rel="stylesheet" href="styles.css"> <!--จัดการลิ้งไฟล์-->
-    <style>
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-        body{
-            background: #BC7C7C;
-        }
-
-        hr{
-            background-color: white;
-        }
-    </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="center">
-    <img class="rounded-circle" src = "profile.jpg" >
-    <hr>
-    <h1><u>Mastuda Jinpei</u></h1>
-    <a href = "https://www.mkrestaurant.com/th"> กรมตำรวจนครบาล </a>
-    <br>
-    <a href="contact.html">Contact</a> 
-
-    <hr style="border-style: dashed double none solid; height: 20px;">
-
-    <h3>ประสบการณ์การทำงาน</h3>
-   <!--<ul>
-       <li>2024-Present Tesla Company</li>
-       <li>2022-2024 CPRAM</li>
-       <li>2010-2022 สถาบันการจัดการปัญญาภิวัฒน์</li>
-       <li>2000-2010 Thai Herbal</li>
-    </ul>-->
-
-       <!-- ทำให้ list นำเสนออกมาเป็น table-->
-        <table style="border-style: ridge;">
-            <thead>
-                <tr>
-                    <th>
-                    Year
-                    </th>
-                     <th>
-                    Work Place
-                    </th>
-                </tr>
-            </thead>
-
-                <tr>
-                    <td>2024-Present</td>
-                    <td>นครบาลที่ 1</td>
-                </tr>
-                <tr>
-                    <td>2022-2024</td>
-                    <td>หน่วยพิเศษ</td>
-                </tr>
-                <tr>
-                    <td>2010-2022</td>
-                    <td>โรงเรียนตำรวจ</td>
-                </tr>
-                <tr>
-                    <td>2000-2010</td>
-                    <td>อู่ฮางิ</td>
-                </tr> 
-        </table>
+<body>
+    <div>
+        <div class="quiz-container">
+            <h1></h1>
+            <p id="question">PIM ย่อมาจากอะไร ?</p>
+            <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+            <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+            <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+            <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+            <p id="result"></p>
+        </div>
+        <div class="quiz-container">
+            <h1></h1>
+            <p id="question">2. PIM เริ่มก่อตั้งเมื่อปีใด ?</p>
+            <button class="button" onclick="checkAnswer2('a')">A) 2565</button>
+            <button class="button" onclick="checkAnswer2('b')">B) 2560</button>
+            <button class="button" onclick="checkAnswer2('c')">C) 2555</button>
+            <button class="button" onclick="checkAnswer2('d')">D) 2550</button>
+            <p id="result2"></p>
+        </div>
+        <p id="result3"></p>
+    </div>
+   <script src="script.js"></script>
 </body>
 </html>
